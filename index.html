@@ -7,6 +7,8 @@
     <title>Mariani's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Questrial&display=swap" />
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -25,12 +27,10 @@
             About
         </a>
 
-                <a href="#pricing" class="nav-link">
-            Pricing
+                <a href="#projects" class="nav-link">
+           Works
         </a>
-                <a href="#contact" class="nav-link">
-            Contact
-        </a>
+
 
             </nav>
         </div>
@@ -49,8 +49,8 @@
                 <div class="icon-wrap">
                     <a class="icon-button linkedin" href="https://www.linkedin.com/in/mariani-mariani" target="_blank"><i class="fa fa-linkedin"></i><span></span></a>
                     <a class="icon-button freecodecamp" href="https://www.freecodecamp.com/marianiscode" target="_blank"><i class="fa fa-free-code-camp"></i><span></span></a>
-                    <a class="icon-button github" href="https://github.com/marianimari" target="_blank"><i class="fa fa-github"></i><span></span></a>
-                    <a class="icon-button instagram" href="https://www.instagram.com/marianistory" target="_blank"><i class="fa fa-instagram"></i><span></span></a>
+                    <a id="profile-link" class="icon-button github" href="https://github.com/marianimari" target="_blank"><i class="fa fa-github"></i><span></span></a>
+                    <a class="icon-button dribbble" href="https://dribbble.com/marianimari" target="_blank"><i class="fa fa-dribbble"></i><span></span></a>
                 </div>
 
 
@@ -60,7 +60,7 @@
     <section>
         <div id="about" class="about-wrap">
             <div class="container-about">
-                <h1 class="title about">About</h1>
+                <h1 class="title about">about</h1>
                 <div class="about-text">
                     <p>
                         I am a Front End Web Developer based in Indonesia. I also have a passion for user interface design and making the most optimal user experiences for digital products. </p>
@@ -115,20 +115,37 @@
     </section>
     <section>
         <div id="projects" class="project-wrap">
-            <div class="container">
-                <h1 class="title">Features</h1>
+            <div class="container-project">
+                <h1 class="title works">works</h1>
 
                 <div class="projectItem-wrap">
 
-                    <div class="projectItem">
-                        <img src="https://marianimari.github.io/productLanding/images/project1.png" 　>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a href="#" class="button-project">View Codepen</a>
+                    <div class="project-tile">
+                        <div class="about-left">
+                            <img src="https://raw.githubusercontent.com/marianimari/Personal-portfolio/master/images/project1.png" 　alt="project product landing page">
+                        </div>
+                        <div class="about-right">
+                            <p class="type-project">HTML, CSS</p>
+                            <p class="title-project">Landing page</p>
+                            <p class="text-project">
+                                A simple home page for a floral painting course, provides info about features, pricing, and contact. I made this for freeCodeCamp course.
+                            </p>
+                            <a href="https://codepen.io/marianimari/full/XWXZMav" target="_blank" class="button-project">View Codepen</a>
+                        </div>
                     </div>
-                    <div class="projectItem">
-                        <img src="https://marianimari.github.io/productLanding/images/project2.png" 　>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a href="#" class="button-project">View Codepen</a>
+
+                    <div class="project-tile">
+                        <div class="about-left">
+                            <img src="https://raw.githubusercontent.com/marianimari/Personal-portfolio/master/images/project2.png" 　alt="project product landing page">
+                        </div>
+                        <div class="about-right">
+                            <p class="type-project">HTML, CSS</p>
+                            <p class="title-project">Technical Documentation</p>
+                            <p class="text-project">
+                                This page provides documentation of Flutter for web developers.
+                            </p>
+                            <a href="https://codepen.io/marianimari/full/YzPgYjw" target="_blank" class="button-project">View Codepen</a>
+                        </div>
                     </div>
 
                 </div>
@@ -139,16 +156,10 @@
     </section>
 
     <section>
-        <div id="contact" class="contact-wrap">
+        <div class="contact-wrap">
             <div class="container">
                 <div class="contact-left">
-
-                </div>
-
-                <div class="contact-right">
-
-
-
+                    <p>© Created by <a href="https://www.linkedin.com/in/mariani-mariani" target="_blank">Mariani</a> for freeCodeCamp (Responsive Web Design Course)</p>
                 </div>
 
             </div>

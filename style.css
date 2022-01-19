@@ -96,6 +96,12 @@ a {
     margin: 0 auto;
 }
 
+.container-project {
+    max-width: 800px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .welcome-section {
     float: left;
     height: auto;
@@ -197,6 +203,13 @@ h1.title.about {
     -webkit-text-fill-color: transparent;
 }
 
+h1.title.works {
+    background-image: radial-gradient(circle farthest-corner at 100% 0, #B6ACFF 28%, #FDABEF 51%, #FCBBA3 87%, #dd5183 96%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 /*about section*/
 
@@ -275,7 +288,7 @@ h1.title.about {
     color: var(--textBlack);
 }
 
-.icon-button .fa.fa-instagram {
+.icon-button .fa.fa-dribbble {
     color: var(--textBlack);
 }
 
@@ -285,16 +298,9 @@ h1.title.about {
 
 .icon-button:hover .fa.fa-linkedin,
 .icon-button:hover .fa.fa-github,
+.icon-button:hover .fa.fa-dribbble,
 .icon-button:hover .fa.fa-free-code-camp {
     color: white;
-}
-
-.icon-button:hover .fa.fa-instagram {
-    background: radial-gradient(circle at 30% 107%, #ffffff 0%, #ffffff 5%, #ffffff 45%, #ffffff 60%, #ffffff 90%);
-    -webkit-background-clip: text;
-    /* Also define standard property for compatibility */
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 
@@ -312,14 +318,12 @@ h1.title.about {
     background-color: #333;
 }
 
-.instagram:hover {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    backdrop-filter: blur(20px);
+.dribbble:hover {
+    background-color: #ea4c89;
 }
 
 .freecodecamp:hover {
     background-color: #006400;
-    backdrop-filter: blur(20px);
 }
 
 
@@ -335,16 +339,32 @@ h1.title.about {
     flex-wrap: wrap;
     padding-bottom: 50px;
     justify-content: center;
+    font-family: 'Questrial', sans-serif;
 }
 
-.featureItem {
-    width: 30%;
-    padding: 30px;
+.project-tile {
+    margin-bottom: 3rem;
 }
 
-.projectItem img {
+.title-project {
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.1em;
+}
+
+.label-project {
+    margin: 0;
+    font-size: 14px;
+}
+
+.text-project {
+    font-size: 16px;
+}
+
+.project-tile img {
     width: auto;
-    height: 80px;
+    height: 200px;
     display: block;
     margin: auto;
 }
@@ -394,13 +414,23 @@ span.fa {
 .button-project {
     background-color: black;
     color: white;
-    height: 30px;
-    width: 100px;
-    padding: 5px 30px;
+    height: fit-content;
+    width: fit-content;
+    padding: 9px 25px;
     text-decoration: none;
-    margin: auto;
+    margin: 30px 0 0 0;
     margin-bottom: 10px;
     display: block;
+    transition: all 0.33s;
+    transition-timing-function: cubic-bezier(.17, .67, .83, .67);
+}
+
+.button-project:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    -webkit-box-shadow: inset 0px 0px 0px 1px #000;
+    -moz-box-shadow: inset 0px 0px 0px 1px #000;
+    box-shadow: inset 0px 0px 0px 1px #000;
 }
 
 
@@ -416,7 +446,10 @@ contact section
 
 .contact-left {
     float: left;
-    width: 50%;
+    width: 100%;
+    font-size: 12px;
+    padding: 1rem 0;
+    text-align: center;
 }
 
 .contact-right {
